@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3ecec;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    margin-top: 150px;
+}
