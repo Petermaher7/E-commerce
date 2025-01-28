@@ -33,14 +33,15 @@ function DataProvider({ children }) {
             id: 5,
             title: "Smart watch",
             price: 600,
-            image: "5.png"
+            image: "6.png"
         },
         {
             id: 6,
             title: "Smart watch",
             price: 600,
-            image: "6.png"
-        },]
+            image: "5.png"
+        },
+    ]
     )
     const AddToCart = (product) => {
         const productFind = Cart.findIndex((item) => item.id === product.id)

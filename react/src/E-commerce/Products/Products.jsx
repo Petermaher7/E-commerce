@@ -12,13 +12,13 @@ function products() {
       <div className='products d-flex flex-wrap justify-content-center '>
         {
           products.map((item,index) => (
-            <div className='card m-2' key={index}>
+            <div className='card m-2 col-sm-6 col-md-4 col-lg-3' key={index}>
 
              <Link to={`${`/products/`+item.id}`}>
               <img src={`/image/${item.image}`} className='card-img' alt="hucker" style={{ width: "18rem" }} />
              </Link>
               
-              <div className='card-body'>
+              <div className='card-body '>
                 <h2>{item.title}</h2>
                 <span>{item.price} EG </span>
               </div>

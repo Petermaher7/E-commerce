@@ -1,21 +1,59 @@
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f3ecec;
+    padding: 10px; 
 }
-
 ul {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-li{
+li {
     list-style: none;
 }
-a{
+a {
     text-decoration: none;
+    color: #000; 
 }
-footer{
+footer {
     margin-top: 150px;
+}
+.card {
+    border-radius: 14px;
+    border: 2px solid black; 
+}
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    ul {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    footer {
+        margin-top: 50px; 
+    }
+
+    .card {
+        margin: 0 10px;
+    }
+}
+@media (max-width: 480px) {
+    .nav {
+        padding: 15px; 
+    }
+
+    ul {
+        gap: 10px; 
+    }
+
+    .card {
+        margin: 10px 0; 
+    }
 }
